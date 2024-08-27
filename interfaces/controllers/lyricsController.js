@@ -1,5 +1,6 @@
 const getLyricsUseCase = require('../../application/useCases/getLyrics');
 
+// Get Lyrics with title and artist name are required
 const getLyrics = async (req, res) => {
     const { title, artist } = req.query;
      console.log(`Received title: ${title}`);
